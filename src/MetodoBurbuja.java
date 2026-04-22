@@ -8,7 +8,7 @@ public class MetodoBurbuja {
         this.arreglo = arreglo; //this -- referencia a la instancia
     }
     public void ordenarAscendente(){
-        for(int i = 0; i<arreglo.length; i++){ //el i =0
+        for(int i = 0; i<arreglo.length; i++){ //el i =0, i = numero de veces que se bloquean
             for(int j = i+1; j < arreglo.length; j ++){ //con todas las js   0-1, 0-2, 0-3, 0-4, bucle se acaba y i ahora vale 1
                 if(arreglo[i] > arreglo[j]){ //comparar posiciones i con j //intercambio: necesito auxiliar si o SI
                     int aux = arreglo[i];
@@ -36,3 +36,4 @@ public class MetodoBurbuja {
         }
     }   //NO CONSTRUCTOR: asume constructor VACÍO
 }     
+//optimizacion: agregar el BREAK para que NO se hagan LAS COMPARACIONES del ARREGLO YA ORDENADO

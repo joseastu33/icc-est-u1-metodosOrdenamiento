@@ -31,8 +31,8 @@ public class MetodoBurbujaAvanzado {
                         contCambios++;
                         int aux = arreglo[j];
                         arreglo[j] = arreglo[j+1];
-                        arreglo[j+1] = aux; }
-                    
+                        arreglo[j+1] = aux;
+                        huboIntercambios = true; }   
                 }
                 if (!huboIntercambios){ //no hay intercambios significa que todo está ordenado, si todo está ordenado detengo el
                     //bucle, porque de lo contrario voy a estar ordenando cosas que ya ordené
